@@ -2,19 +2,36 @@ CPD - Continuing Professional Development
 
 
 Date of CPD activity
-11/01/2021
+11/01/2021 - Week 1
 
 CPD activity
-Introduction to Web Development
+Introduction to Web Development.
 
 
 What have I learnt?
-I learnt about the World Wide Web and internet.
+This week I understood the difference between the world wide web and the internet.  
+That clients include laptops, P.Cs, mobile phones, which use different browsers like chrome, firefox, edge and safari.  That these browsers mainly use HTML, JavaScript and CSS programming languages.
+That servers host/store webpages.
+
+Web design versus web development Front end versus back end.
+The responsive web
+How does the web work
+Elements of a web page like navigation, hero, footer, slider/carousel
+
+How to ping a server to find its IP address
+
+Which websites we can learn programming language from like w3schools, codeacademy
+Which youTubers to subscribe to.
+
+About text editors like Visual Studio, atom, sublime text.
+
+We set up git, github, visual studio
 
 
 How did I use this in practice?
-
-
-
+I set up a codeacademy account
+I subscribed to youTubers
+I helped someone in a professional networks whatsapp group.
 
 What did I find hard?
+Concentrating whilst trying to homeschool and half the family having covid-19 :(
