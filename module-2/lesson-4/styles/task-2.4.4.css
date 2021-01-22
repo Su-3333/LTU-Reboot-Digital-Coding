@@ -1,0 +1,15 @@
+.container{
+    position: relative;
+}
+
+.container img{
+    height: 600px;
+}
+
+.container span{
+    position: absolute;
+    bottom: 100px;
+    left: 120px;
+    background-color: white;
+    
+}
