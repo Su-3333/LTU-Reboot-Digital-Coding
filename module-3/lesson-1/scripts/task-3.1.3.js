@@ -1,4 +1,4 @@
 let myName = 'Suh';
-console.log('myName');
-document.write('myName');
-alert('myName');
+console.log( myName );
+document.write( myName );
+alert( myName );
