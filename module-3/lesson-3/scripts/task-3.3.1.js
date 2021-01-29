@@ -10,4 +10,4 @@ function percentageCalculator ( number, percentage) {
 // var percentage = 40
 console.log ( percentageCalculator ( 600, 40));
 console.log ( percentageCalculator ( 90, 20));
-console.log ( percentageCalculator( number, percentage));
+//console.log ( percentageCalculator( number, percentage));
