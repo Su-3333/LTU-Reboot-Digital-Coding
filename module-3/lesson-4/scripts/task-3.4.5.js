@@ -24,5 +24,7 @@ var  favouriteRecipe = {
     letscook: function (food){
         console.log("I'm hungry, lets cook " + recipeTitle );
     }
+
+    
      favouriteRecipe.recipeTitle ("veganChiaPudding");
     
