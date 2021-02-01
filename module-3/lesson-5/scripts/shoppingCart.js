@@ -59,3 +59,4 @@ let shoppingCart = [
   quantity:3,
   price:.4
 }];
+
