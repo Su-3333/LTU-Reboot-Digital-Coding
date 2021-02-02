@@ -5,7 +5,8 @@ function discountForFood (arr){
 
     // 3. loop through each item in the array and add the value of the item to the totalPrice, remembering to account for the quantity.
     for (let index = 0; index < arr.length; index++ ){
-        if (arr[index].type === "Food") {
+
+        if (arr[index].type === "food") {
             
             let discount = (arr[index].price * 20) /100 ;
 
