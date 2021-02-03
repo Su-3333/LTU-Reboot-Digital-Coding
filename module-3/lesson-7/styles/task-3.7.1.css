@@ -1,0 +1,25 @@
+body {
+    background-color: honeydew;
+    padding: 20px;
+
+}
+
+header{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; 
+}
+
+div.image{
+    width: 400px;
+    margin-top: 40px;
+    border: 5px;
+}
+
+img{
+
+    width: 100%;
+
+}
