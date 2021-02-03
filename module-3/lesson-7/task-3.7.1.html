@@ -4,8 +4,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Task 3.7.1</title>
+  <link rel="stylesheet" href="./styles/task-3.7.1.css">
 </head>
 <body>
   
+<header>
+<h1>Using JS to filter for now</h1>
+<!-- put div class in header so they are associated -->
+<div class="selection-container">
+  <button class="selection" data-class="allglutenfree">All Gluten Free</button>
+    <button class="selection" data-class= "vegan">Vegan</button>
+    <button class="selection" data-class="omnivore">Omnivore</button>
+    <button class="selection" data-class="paleo">Paleo</button>
+    <button class="selection" data-class="aip" >A.I.P</button>
+  </div>
+
+</header> <!-- end of header-->
+
+<main>
+
+  <div class= "image-selections">
+
+    <div class="images" data-class= "vegan">
+
+      <img src="https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8dmVnYW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60" alt="Vegan Food">
+    </div>
+
+    <div class="images" data-class="omnivore">
+    <img src="https://images.unsplash.com/photo-1593967858534-40654ea9607b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8YmFsYW5jZWQlMjBtZWFsfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60" alt="Omnivore">
+    </div>
+    <div class="images" data-class="paleo">
+    <img src="https://images.unsplash.com/photo-1598511757337-fe2cafc31ba0?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8cGFsZW98ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60" alt="Paleo">
+  </div>
+
+  <div class="images" data-class="aip"> 
+  <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8ZmlzaCUyMG1lYWx8ZW58MHx8MHw%3D&auto=format&fit=crop&w=1000&q=60" alt="AIP">
+</div>
+
+
+  </div>  <!-- end of image selections-->
+
+</main><!-- end of main-->
+
+
+<script src="./scripts/task-3.7.1.js"></script>
+
+
 </body>
 </html>
