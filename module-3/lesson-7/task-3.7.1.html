@@ -4,38 +4,94 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Task 3.7.1</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/task-3.7.1.css">
 </head>
 <body>
   
 <header>
 <h1>Using JS to filter for now</h1>
+
+<div class ="search-container">
+  <label for="filter">Search</label>
+  <input type="text" name="filter">
+  <button. class ="filter-button:">Filter</button.>
+</div>
+
 <!-- put div class in header so they are associated -->
 <div class="selection-container">
-  <button class="selection" data-class="allglutenfree">All Gluten Free</button>
+  <button class="selection active" data-class="allglutenfree">All Gluten Free</button>
     <button class="selection" data-class= "vegan">Vegan</button>
     <button class="selection" data-class="omnivore">Omnivore</button>
     <button class="selection" data-class="paleo">Paleo</button>
-    <button class="selection" data-class="aip" >A.I.P</button>
+    <button class="selection" data-class="aip" >AIP</button>
   </div>
 
 </header> <!-- end of header-->
+
+
 
 <main>
 
   <div class= "image-selections">
 
-    <div class="images" data-class= "vegan">
-
-      <img src="https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8dmVnYW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60" alt="Vegan Food">
+    <div class="images" data-class= "allglutenfree">
+      <img src="https://images.unsplash.com/photo-1506368249639-73a05d6f6488?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nnx8c3Bvb25zfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60" alt="All Gluten Free Food">
     </div>
+
+    <div class="images" data-class= "vegan">
+      <img src="https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8dmVnYW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60" alt="Vegan blue bowl of food">
+    </div>
+
+    <div class="images" data-class= "vegan">
+      <img src="https://images.unsplash.com/photo-1600935926387-12d9b03066f0?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8cm90aXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1296&q=60" alt="Vegan Roti ">
+
+      <div class="images" data-class= "vegan">
+        <img src="https://images.unsplash.com/photo-1608830597604-619220679440?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y2Fycm90JTIwY2FrZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1296&q=60" alt="Vegan Carrot cake with fruit">
+      </div>
+
+        <div class="images" data-class= "vegan">
+          <img src="https://images.unsplash.com/photo-1577594412764-f8fa57d4e5b4?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8c21vb3RoaWV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1296&q=60" alt="Vegan Milkshakes">
+        </div>
 
     <div class="images" data-class="omnivore">
     <img src="https://images.unsplash.com/photo-1593967858534-40654ea9607b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8YmFsYW5jZWQlMjBtZWFsfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60" alt="Omnivore">
     </div>
+
+  </div>
+  <div class="images" data-class="omnivore">
+  <img src="https://images.unsplash.com/photo-1527324688151-0e627063f2b1?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8c2F1c2FnZXN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1296&q=60" alt="Omnivore Meat on grill">
+</div>
+
+
+</div>
+<div class="images" data-class="omnivore">
+<img src="https://images.unsplash.com/photo-1533060328534-2db4d2602877?ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8c2F1c2FnZXN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1296&q=60" alt="Omnivore Sausages">
+</div>
+
+</div>
+<div class="images" data-class="omnivore">
+<img src="https://images.unsplash.com/photo-1595165248648-60159ca63db4?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTF8fHNhdXNhZ2VzfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1296&q=60" alt="Omnivore Pizza">
+</div>
+
+
+
     <div class="images" data-class="paleo">
     <img src="https://images.unsplash.com/photo-1598511757337-fe2cafc31ba0?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8cGFsZW98ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60" alt="Paleo">
+    </div>
+
+    <div class="images" data-class="paleo">
+      <img src="https://images.unsplash.com/photo-1594756202469-9ff9799b2e4e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8c291cHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1296&q=60" alt="Paleo Yellow Soup">
   </div>
+
+  <div class="images" data-class="paleo">
+    <img src="https://images.unsplash.com/photo-1475869430886-fb14585f7443?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8c2FsYWQlMjBhbmQlMjBtZWF0fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1296&q=60" alt="Paleo sticky chicken and corn">
+</div>
+
+<div class="images" data-class="paleo">
+  <img src="" alt="Paleo">
+</div>
 
   <div class="images" data-class="aip"> 
   <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8ZmlzaCUyMG1lYWx8ZW58MHx8MHw%3D&auto=format&fit=crop&w=1000&q=60" alt="AIP">
