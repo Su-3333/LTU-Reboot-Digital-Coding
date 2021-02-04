@@ -1,6 +1,7 @@
 body {
     background-color: honeydew;
     padding: 20px;
+    font-family: 'Roboto Mono', monospace;
 
 }
 
@@ -12,14 +13,53 @@ header{
     padding: 20px; 
 }
 
-div.image{
-    width: 400px;
+h1 {
+    font-size: 64px;
+}
+
+button {
+    font-size: 20px;
+    height: 60px;
+    width: 150px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+button.filter-button.{
+    30px;
+}
+
+.search-container {
+    margin-bottom: 30px;
+}
+
+main {
+    width: 90%;
+    margin: 2em auto;
+}
+
+div.image.selections {
+    display:flex;
+    flex-wrap: wrap;
+    flex:1;
+    justify-content: space-between;
+}
+
+div.images {
+    width: 300px;
     margin-top: 40px;
     border: 5px;
 }
 
 img{
-
-    width: 100%;
+     width: 100%;
+     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 
 }
+
+.active {
+    background-color: #343434;
+    color: #ffffff;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    outline: none;
+}
+
