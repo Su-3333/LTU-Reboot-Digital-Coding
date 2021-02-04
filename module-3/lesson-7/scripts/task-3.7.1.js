@@ -1,8 +1,18 @@
 const buttons = document.querySelectorAll('button.selection');
 
-const allimages = document.querySelectorAll('main.image-selections.images');
+const allimages = document.querySelectorAll('main .image-selections .images');
+ // toggle images selection
 
-function toggleimages( dataClass ) {
+
+ // attribute = name, value = filter
+let filterSearch = document.querySelector( 'input[name="filter"]');
+
+let filterButton = document.querySelector('button.filter-button');
+
+
+
+
+function toggleImages( dataClass ) {
 
         if(dataClass === 'allglutenfree' ) {
 
@@ -14,7 +24,7 @@ function toggleimages( dataClass ) {
 
             allimages.forEach( function( image ) {
 
-                if( image.dataSet.class === dataClass ){
+                if( image.dataset.class === dataClass ){
 
                     image.style.display = 'flex';
 
@@ -23,15 +33,62 @@ function toggleimages( dataClass ) {
                 }
             });
 
-        }
-}
+        }  // end of if/else statement
+} //end of toggleimages function
 
+//toggleActiveClass
+function toggleActiveClass (active){
+
+    buttons.forEach(function(button ) {
+
+        button.classList.remove('active');
+        
+
+    }); 
+    active.classList.add('active');
+
+} // end of toggleActiveClass
+
+
+// filter button
+
+filterButton.addEventListener('click', function ( ){
+
+            let inputValue = filterSearch.value;
+            
+            let searchTerm = inputValue.toLowerCase();
+
+            toggleImages( searchTerm ); 
+
+             buttons.forEach(function( button ){
+
+                let dataClass = button.getAttribute('data-class');
+
+                    if( dataClass === searchTerm){
+                        button.classList.add('active');
+
+                    } else {
+
+                        button.classList.remove ('active');
+
+                    } // end of if/else statement
+
+            }); // end of forEach loop
+
+             // empties out filter box ready for next search   
+            filterSearch.value = '';
+   // test using console.log below
+   //  console.log(inputValue.toLowerCase()); 
+});
 
 buttons.forEach(function(button){
 
     button.addEventListener('click', function() {
-        toggleimages(button.dataset.class);
 
+
+        toggleImages(button.dataset.class);
+
+        toggleActiveClass(button);
     });
 
-});
+});  // End of forEach statement
