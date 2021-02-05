@@ -20,9 +20,11 @@ h1 {
 button {
     font-size: 20px;
     height: 60px;
-    width: 150px;
+    width: 200px;
     font-family: 'Roboto Mono', monospace;
 }
+
+/* What does think link to? */
 
 button.filter-button.{
     30px;
@@ -37,7 +39,7 @@ main {
     margin: 2em auto;
 }
 
-div.image.selections {
+div.image-selections {
     display:flex;
     flex-wrap: wrap;
     flex:1;
