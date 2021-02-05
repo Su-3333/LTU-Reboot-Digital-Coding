@@ -41,10 +41,10 @@ function toggleActiveClass (active){
 
     buttons.forEach(function(button ) {
 
-        button.classList.remove('active');
-        
-
+    button.classList.remove('active');
+     
     }); 
+
     active.classList.add('active');
 
 } // end of toggleActiveClass
@@ -52,7 +52,7 @@ function toggleActiveClass (active){
 
 // filter button
 
-filterButton.addEventListener('click', function ( ){
+filterButton.addEventListener('click', function ( ) {
 
             let inputValue = filterSearch.value;
             
@@ -85,8 +85,10 @@ buttons.forEach(function(button){
 
     button.addEventListener('click', function() {
 
+        let dataClass = button.dataset.class;
 
-        toggleImages(button.dataset.class);
+
+        toggleImages(dataClass);
 
         toggleActiveClass(button);
     });
