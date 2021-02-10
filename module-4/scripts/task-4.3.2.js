@@ -29,24 +29,30 @@ let books = [
     {
         title: 'Harry Potter',
         author: "J.K. Rowling",
-        hasRead: true false,
+        hasRead: false,
     },
 
     {
-        title: '',
-        author: "",
-        hasRead: true false,
+        title: 'The untethered soul',
+        author: "Michael A.Singer",
+        hasRead: true,
     },
 
     {
-        title: '',
-        author: "",
-        hasRead: true false,
+        title: 'A place for us',
+        author: "Fatima Farheen Mirza",
+        hasRead: true,
     },
 
 ];
 
-for (let counter = 0; count< books.length; counter++){
+for (let counter = 0; counter< books.length; counter++){
+    if (books[counter].hasRead == true){
+        console.log("You have already read " + ${books[counter].title} + "by" + ${books[counter].author})
+        else
+        console.log("Please read" + ${books[counter].title})
+    }
+
 
     console.log(books[ counter].title);
 
